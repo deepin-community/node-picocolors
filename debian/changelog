@@ -1,5 +1,31 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-picocolors (1.0.0-4) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + node-picocolors: Add :any qualifier for nodejs dependency.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Tue, 22 Nov 2022 12:11:21 +0000
+
+node-picocolors (1.0.0-3) unstable; urgency=medium
+
+  * Team upload
+
+  [ lintian-brush ]
+  * debian/copyright: use spaces rather than tabs to start continuation lines
+
+  [ Yadd ]
+  * Drop dependency to nodejs
+  * Indicates that this package breaks node-browserslist < 4.19.1+repack~
+
+ -- Yadd <yadd@debian.org>  Mon, 03 Jan 2022 14:13:41 +0100
+
+node-picocolors (1.0.0-2) unstable; urgency=medium
+
+  * Mention three authors in d/copyright.
+
+ -- Julien Puydt <jpuydt@debian.org>  Tue, 21 Dec 2021 14:09:50 +0100
+
+node-picocolors (1.0.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #1001495)
+
+ -- Julien Puydt <jpuydt@debian.org>  Sat, 11 Dec 2021 00:07:36 +0100

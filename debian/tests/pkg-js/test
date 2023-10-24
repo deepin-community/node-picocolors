@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+
+# no interest in build-time
+if [ -f package.json ]; then
+	exit 0
+fi
+
+sed -i tests/*js -e "s|\.\./||g"
+nodejs tests/environments.js && nodejs tests/test.js
